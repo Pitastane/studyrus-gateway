@@ -5,78 +5,176 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudyRus Gateway</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Mobile optimizations and WhatsApp button styles */
+        .language-switcher {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            padding: 15px;
+            background: #f0f0f0;
+            flex-wrap: wrap;
+        }
+        .language-switcher button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: 2px solid #333;
+            background: white;
+            cursor: pointer;
+            border-radius: 5px;
+            min-height: 44px;
+            min-width: 80px;
+        }
+        .language-switcher button.active {
+            background: #0066cc;
+            color: white;
+        }
+        .whatsapp-inline {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #25D366;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 20px 0;
+            font-size: 18px;
+            min-height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            text-decoration: none;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            z-index: 1000;
+        }
+        @media (max-width: 768px) {
+            .language-switcher button {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+            nav a {
+                font-size: 14px;
+                padding: 8px 12px;
+            }
+            h1 { font-size: 1.8em; }
+            h2 { font-size: 1.5em; }
+            .whatsapp-float {
+                width: 56px;
+                height: 56px;
+                bottom: 15px;
+                right: 15px;
+            }
+        }
+    </style>
 </head>
 <body>
+    <!-- Language Switcher at the very top -->
+    <div class="language-switcher">
+        <button onclick="switchLanguage('en')" id="lang-en" class="active">English</button>
+        <button onclick="switchLanguage('fr')" id="lang-fr">Français</button>
+        <button onclick="switchLanguage('ar')" id="lang-ar">العربية</button>
+    </div>
+
     <header>
         <div class="logo">
-            🤓 StudyRus Gateway
+            🤓 <span data-translate="site-title">StudyRus Gateway</span>
         </div>
         <nav>
-            <a href="#why">Why Russia?</a>
-            <a href="#process">Application</a>
-            <a href="#life">Student Life</a>
-            <a href="#contact">Contact</a>
+            <a href="#why" data-translate="nav-why">Why Russia?</a>
+            <a href="#process" data-translate="nav-process">Application</a>
+            <a href="#life" data-translate="nav-life">Student Life</a>
+            <a href="#contact" data-translate="nav-contact">Contact</a>
         </nav>
     </header>
+
     <main>
         <!-- Hero Image Section -->
         <section class="hero-image">
-            <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=900&q=80" alt="Students studying together" />
+            <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=900&q=80" alt="Students studying together">
         </section>
+
         <section class="intro">
-            <h1>Welcome, Mauritania Students! 🎓</h1>
-            <p>We're thrilled to have you here! This portal is your friendly guide to pursuing higher education in Russia. Whether you're dreaming of studying engineering, medicine, or the arts, we're here to support you every step of the way. Discover opportunities, connect with fellow students, and start your journey toward an exciting future!</p>
+            <h1 data-translate="intro-title">Welcome, Mauritania Students! 🎓</h1>
+            <p data-translate="intro-text">We're thrilled to have you here! This portal is your friendly guide to pursuing higher education in Russia. Whether you're dreaming of studying engineering, medicine, or the arts, we're here to support you every step of the way. Discover opportunities, connect with fellow students, and start your journey toward an exciting future!</p>
         </section>
+
         <section id="why">
-            <h2>Why Study in Russia?</h2>
+            <h2 data-translate="why-title">Why Study in Russia?</h2>
             <ul>
-                <li>High-quality education and global recognition</li>
-                <li>Affordable tuition fees and living costs</li>
-                <li>Rich cultural experience</li>
-                <li>Vibrant student community</li>
+                <li data-translate="why-1">High-quality education and global recognition</li>
+                <li data-translate="why-2">Affordable tuition fees and living costs</li>
+                <li data-translate="why-3">Rich cultural experience</li>
+                <li data-translate="why-4">Vibrant student community</li>
             </ul>
         </section>
+
         <section id="process">
-            <h2>Application Process</h2>
+            <h2 data-translate="process-title">Application Process</h2>
             <ol>
-                <li>Research Russian universities and select programs.</li>
-                <li>Gather necessary documents: passport, diploma, transcripts.</li>
-                <li>Apply online and submit documents.</li>
-                <li>Await offer letter and apply for a student visa.</li>
+                <li data-translate="process-1">Research Russian universities and select programs.</li>
+                <li data-translate="process-2">Gather necessary documents: passport, diploma, transcripts.</li>
+                <li data-translate="process-3">Apply online and submit documents.</li>
+                <li data-translate="process-4">Await offer letter and apply for a student visa.</li>
             </ol>
         </section>
+
         <section id="life">
-            <h2>Student Life</h2>
-            <p>Enjoy diverse campus activities, explore Russian cities, and connect with fellow international students.</p>
+            <h2 data-translate="life-title">Student Life</h2>
+            <p data-translate="life-text">Enjoy diverse campus activities, explore Russian cities, and connect with fellow international students.</p>
             <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=600&h=400&fit=crop" alt="Campus life with diverse students">
-            <button id="studentTipsBtn">Get Student Tips</button>
+            <button id="studentTipsBtn" data-translate="tips-button">Get Student Tips</button>
             <div id="studentTips" style="display:none;">
                 <ul>
-                    <li>Learn basic Russian phrases before arrival.</li>
-                    <li>Join student organizations for support.</li>
-                    <li>Budget wisely for living expenses.</li>
+                    <li data-translate="tip-1">Learn basic Russian phrases before arrival.</li>
+                    <li data-translate="tip-2">Join student organizations for support.</li>
+                    <li data-translate="tip-3">Budget wisely for living expenses.</li>
                 </ul>
             </div>
         </section>
+
         <section id="contact">
-            <h2>Contact & Support</h2>
+            <h2 data-translate="contact-title">Contact & Support</h2>
+            
+            <!-- WhatsApp Contact Button -->
+            <a href="https://wa.me/79269540909" class="whatsapp-inline" target="_blank">
+                📱 <span data-translate="whatsapp-button">Chat on WhatsApp</span>
+            </a>
+            
             <form id="contactForm">
-                <label for="name">Your Name:</label>
+                <label for="name" data-translate="form-name">Your Name:</label>
                 <input type="text" id="name" required>
-                <label for="email">Email:</label>
+                <label for="email" data-translate="form-email">Email:</label>
                 <input type="email" id="email" required>
-                <label for="message">Message:</label>
+                <label for="message" data-translate="form-message">Message:</label>
                 <textarea id="message" required></textarea>
-                <button type="submit">Send</button>
+                <button type="submit" data-translate="form-submit">Send</button>
             </form>
-            <div id="formSuccess" style="display:none;color:green;">
+            <div id="formSuccess" style="display:none;color:green;" data-translate="form-success">
                 Your message has been sent!
             </div>
         </section>
     </main>
+
     <footer>
-        © 2025 StudyRus Gateway. Designed for Mauritania students.
+        <span data-translate="footer-text">© 2025 StudyRus Gateway. Designed for Mauritania students.</span>
     </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/79269540909" class="whatsapp-float" target="_blank" aria-label="WhatsApp">💬</a>
+
     <script src="app.js"></script>
 </body>
 </html>
