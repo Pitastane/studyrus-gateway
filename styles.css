@@ -1,0 +1,90 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    background: #f5f7fa;
+    color: #222;
+}
+
+header {
+    background: #2344a8;
+    color: #fff;
+    padding: 1em 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+nav {
+    margin-bottom: 0.5em;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1em;
+    font-weight: 500;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 700px;
+    margin: 2em auto;
+    background: #fff;
+    padding: 2em;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(35,68,168,0.08);
+}
+
+section {
+    margin-bottom: 2em;
+}
+.intro {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+h1, h2 {
+    color: #2344a8;
+}
+ul, ol {
+    margin-left: 1em;
+}
+`¥tton {
+    background: #2344a8;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 1em;
+}
+button:hover {
+    background: #1a3480;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+input, textarea {
+    padding: 0.5em;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+footer {
+    text-align: center;
+    padding: 1.5em 0;
+    background: #e6e8f2;
+    color: #2344a8;
+    font-size: 1em;
+    margin-top: 2em;
+    border-top: 1px solid #ccc;
+}

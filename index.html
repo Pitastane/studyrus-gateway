@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyRus Gateway</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            🤓 <span>StudyRus Gateway</span>
+        </div>
+        <nav>
+            <a href="#why">Why Russia?</a>
+            <a href="#process">Application</a>
+            <a href="#life">Student Life</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <h1>Welcome, Mauritania Students!</h1>
+            <p>This portal is designed for students from Mauritania who want to study in Russia. Find guidance on universities, applications, and student life!</p>
+        </section>
+
+        <section id="why">
+            <h2>Why Study in Russia?</h2>
+            <ul>
+                <li>High-quality education and global recognition</li>
+                <li>Affordable tuition fees and living costs</li>
+                <li>Rich cultural experience</li>
+                <li>Vibrant student community</li>
+            </ul>
+        </section>
+
+        <section id="process">
+            <h2>Application Process</h2>
+            <ol>
+                <li>Research Russian universities and select programs.</li>
+                <li>Gather necessary documents: passport, diploma, transcripts.</li>
+                <li>Apply online and submit documents.</li>
+                <li>Await offer letter and apply for a student visa.</li>
+            </ol>
+        </section>
+
+        <section id="life">
+            <h2>Student Life</h2>
+            <p>Enjoy diverse campus activities, explore Russian cities, and connect with fellow international students.</p>
+            <button id="studentTipsBtn">Get Student Tips</button>
+            <div id="studentTips" style="display:none;">
+                <ul>
+                    <li>Learn basic Russian phrases before arrival.</li>
+                    <li>Join student organizations for support.</li>
+                    <li>Budget wisely for living expenses.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact & Support</h2>
+            <form id="contactForm">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <div id="formSuccess" style="display:none;color:green;">
+                Your message has been sent!
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 StudyRus Gateway. Designed for Mauritania students.
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
