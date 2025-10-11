@@ -1,70 +1,6 @@
-body {
     font-family: 'Segoe UI', Arial, sans-serif;
-    margin: 0;
-    background: #f5f7fa;
-    color: #222;
-}
-header {
-    background: linear-gradient(90deg, #2563eb 0%, #43d19e 100%);
-    color: #fff;
-    padding: 1em 2em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.logo {
-    font-size: 2em;
-    font-weight: bold;
-    margin-bottom: 0.5em;
-    color: #ff9800;
-}
-nav {
-    margin-bottom: 0.5em;
-}
-nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 1em;
-    font-weight: 500;
-}
-nav a:hover {
-    text-decoration: underline;
-    color: #ff9800;
-}
-main {
-    max-width: 700px;
-    margin: 2em auto;
-    padding: 1.5em;
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.1);
-}
-h1, h2, h3 {
-    color: #2563eb;
-}
-h1 {
-    font-size: 2em;
-    text-align: center;
-    margin-bottom: 0.5em;
-}
-p {
-    font-size: 1.1em;
-    line-height: 1.6;
-    margin-bottom: 1em;
-}
-button {
-    background: linear-gradient(90deg, #2563eb 0%, #43d19e 100%);
-    color: #fff;
-    border: none;
-    padding: 0.5em 1em;
-    border-radius: 6px;
-    cursor: pointer;
-    margin-top: 1em;
-    border: 2px solid transparent;
-}
-button:hover {
-    border-color: #ff9800;
-    box-shadow: 0 0 10px rgba(255, 152, 0, 0.5);
+    
+box-shadow: 0 0 10px rgba(255, 152, 0, 0.5);
 }
 form {
     display: flex;
@@ -103,7 +39,7 @@ footer {
   width: auto;
 }
 img {
- max-width: 250px !important; height: auto;
+ max-width: 250px; height: auto;
 }
 .long-picture {
   height: 500px;
@@ -111,4 +47,13 @@ img {
   display: block;
   margin: 0 auto;
   border-radius: 16px;
+}
+.centered-image {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 20px;
 }
