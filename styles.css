@@ -45,6 +45,7 @@ main {
 }
 .hero-image img {
     width: 100%;
+    max-width: 80px;
     /* height: 300px; */
     object-fit: cover;
     display: block;
@@ -74,7 +75,7 @@ section {
 /* Student Life Section Image */
 section#life img {
     width: 100%;
-    max-width: 100%;
+    max-width: 80px;
     height: auto;
     border-radius: 12px;
     margin: 1.5em 0;
@@ -119,7 +120,7 @@ footer {
 }
 .russia-landmarks img {
   width: 100%;
-  max-width: 150px;
+  max-width: 80px;
   display: block;
   margin: 1.25em auto;
   border-radius: 12px;
