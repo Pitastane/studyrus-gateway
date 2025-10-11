@@ -34,61 +34,23 @@ nav a:hover {
 main {
     max-width: 700px;
     margin: 2em auto;
+    padding: 1.5em;
     background: #fff;
-    padding: 2em;
     border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.1);
 }
-section {
-    margin-bottom: 2em;
-    padding: 1em 0;
-}
-section:not(:last-child) {
-    border-bottom: 1px solid #e0e0e0;
-}
-/* Hero Section Styles */
-section#hero {
-    text-align: center;
-    background: linear-gradient(135deg, #f0f2f5 0%, #e6e9f4 100%);
-    padding: 3em 2em;
-    border-radius: 12px;
-    margin-bottom: 2em;
-}
-section#hero h1 {
-    font-size: 2.2em;
-    margin-bottom: 0.5em;
+h1, h2, h3 {
     color: #2563eb;
 }
-section#hero p {
+h1 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+p {
     font-size: 1.1em;
     line-height: 1.6;
-    color: #555;
-}
-/* Why Study in Russia Section */
-section#why ul {
-    background: #f9fafc;
-    padding: 1.5em;
-    border-radius: 8px;
-    border-left: 4px solid #ff9800;
-}
-section#why li {
-    padding: 0.5em 0;
-    color: #444;
-}
-/* Student Life Section Image */
-section#life img {
-    width: 100%;
-    max-width: 130px;
-    height: auto;
-    border-radius: 12px;
-    margin: 1.5em 0;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-h1, h2 {
-    color: #2563eb;
-}
-ul, ol {
-    margin-left: 1em;
+    margin-bottom: 1em;
 }
 button {
     background: linear-gradient(90deg, #2563eb 0%, #43d19e 100%);
@@ -140,4 +102,13 @@ footer {
   height: 400px;
   width: auto;
 }
-img { max-width: 250px !important; height: auto; }
+img {
+ max-width: 250px !important; height: auto;
+}
+.long-picture {
+  height: 500px;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 16px;
+}
