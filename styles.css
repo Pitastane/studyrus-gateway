@@ -4,6 +4,7 @@ body {
     background: #f5f7fa;
     color: #222;
 }
+
 header {
     background: #2344a8;
     color: #fff;
@@ -12,66 +13,80 @@ header {
     flex-direction: column;
     align-items: center;
 }
+
 .logo {
     font-size: 2em;
     font-weight: bold;
     margin-bottom: 0.5em;
 }
+
 nav {
     margin-bottom: 0.5em;
 }
+
 nav a {
     color: #fff;
     text-decoration: none;
     margin: 0 1em;
     font-weight: 500;
 }
+
 nav a:hover {
     text-decoration: underline;
 }
+
 main {
     max-width: 700px;
     margin: 2em auto;
     background: #fff;
     padding: 2em;
     border-radius: 12px;
-    box-shadow: 0 2px 12px rgba(35,68,168,0.08);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
-/* Hero Image Section */
-.hero-image {
-    margin: -2em -2em 2em -2em;
-    border-radius: 12px 12px 0 0;
-    overflow: hidden;
-}
-.hero-image img {
-    width: 100%;
-    max-width: 130px;
-    /* height: 300px; */
-    object-fit: cover;
-    display: block;
-}
+
 section {
     margin-bottom: 2em;
+    padding: 1em 0;
 }
-/* Enhanced Intro Section */
-.intro {
+
+section:not(:last-child) {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Hero Section Styles */
+section#hero {
     text-align: center;
-    margin-bottom: 2.5em;
-    padding: 1.5em;
-    background: linear-gradient(135deg, #f0f4ff 0%, #e6f0ff 100%);
+    background: linear-gradient(135deg, #f0f2f5 0%, #e6e9f4 100%);
+    padding: 3em 2em;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(35, 68, 168, 0.1);
+    margin-bottom: 2em;
 }
-.intro h1 {
-    margin-top: 0;
-    font-size: 2em;
+
+section#hero h1 {
+    font-size: 2.2em;
+    margin-bottom: 0.5em;
     color: #2344a8;
 }
-.intro p {
+
+section#hero p {
     font-size: 1.1em;
     line-height: 1.6;
-    color: #333;
+    color: #555;
 }
+
+/* Why Study in Russia Section */
+section#why ul {
+    background: #f9fafc;
+    padding: 1.5em;
+    border-radius: 8px;
+    border-left: 4px solid #2344a8;
+}
+
+section#why li {
+    padding: 0.5em 0;
+    color: #444;
+}
+
 /* Student Life Section Image */
 section#life img {
     width: 100%;
@@ -81,12 +96,15 @@ section#life img {
     margin: 1.5em 0;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
 h1, h2 {
     color: #2344a8;
 }
+
 ul, ol {
     margin-left: 1em;
 }
+
 button {
     background: #2344a8;
     color: #fff;
@@ -96,19 +114,23 @@ button {
     cursor: pointer;
     margin-top: 1em;
 }
+
 button:hover {
     background: #1a3480;
 }
+
 form {
     display: flex;
     flex-direction: column;
     gap: 0.5em;
 }
+
 input, textarea {
     padding: 0.5em;
     border-radius: 6px;
     border: 1px solid #ccc;
 }
+
 footer {
     text-align: center;
     padding: 1.5em 0;
@@ -118,6 +140,7 @@ footer {
     margin-top: 2em;
     border-top: 1px solid #ccc;
 }
+
 .russia-landmarks img {
   width: 100%;
   max-width: 130px;
@@ -126,4 +149,10 @@ footer {
   border-radius: 12px;
   box-shadow: 0 2px 12px #0002;
 }
+
+.long-image {
+  height: 400px;
+  width: auto;
+}
+
 img { max-width: 250px !important; height: auto; }
