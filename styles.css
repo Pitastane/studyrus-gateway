@@ -126,3 +126,4 @@ footer {
   border-radius: 12px;
   box-shadow: 0 2px 12px #0002;
 }
+img { max-width: 80px !important; height: auto; }
