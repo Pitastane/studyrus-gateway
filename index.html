@@ -16,7 +16,15 @@
     .flags-container img { height: 30px; width: auto; border: 1px solid #ddd; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
     .russia-landmarks { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 30px 0; }
     .russia-landmarks img { width: 100%; height: 250px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-    @media (max-width: 768px) { .language-switcher button { font-size: 14px; padding: 8px 16px; } nav a { font-size: 14px; padding: 8px 12px; } h1 { font-size: 1.8em; } h2 { font-size: 1.5em; } .whatsapp-float { width: 56px; height: 56px; bottom: 15px; right: 15px; } .flags-container { margin-left: 10px; } .flags-container img { height: 24px; } }
+    @media (max-width: 768px) {
+      .language-switcher button { font-size: 14px; padding: 8px 16px; }
+      nav a { font-size: 14px; padding: 8px 12px; }
+      h1 { font-size: 1.8em; }
+      h2 { font-size: 1.5em; }
+      .whatsapp-float { width: 56px; height: 56px; bottom: 15px; right: 15px; }
+      .flags-container { margin-left: 10px; }
+      .flags-container img { height: 24px; }
+    }
   </style>
 </head>
 <body>
@@ -42,34 +50,57 @@
     </nav>
   </header>
   <main>
-    <img src="images/image.jpg" class="long-picture" alt="Students studying together on campus" />
+    <img src="images/image.jpg" class="main-hero-image" alt="Students in Russia" />
     <section class="intro">
-      <h1 data-translate="intro-title">Welcome, Mauritania Students! 🎓</h1>
-      <p data-translate="intro-text">We're thrilled to have you here! This portal is your friendly guide to pursuing higher education in Russia. Whether you're dreaming of studying engineering, medicine, or the arts, we're here to support you every step of the way. Discover opportunities, connect with fellow students, and start your journey toward an exciting future!</p>
+      <!-- English Version -->
+      <div class="lang-content" data-lang="en">
+        <h1>Study in Russia – Your Gateway to World-Class Education</h1>
+        <p>Russia offers internationally recognized degrees, affordable tuition, and a rich cultural experience. Whether you're interested in medicine, engineering, or the arts, Russian universities provide top-tier programs taught in English and Russian.</p>
+      </div>
+      <!-- French Version -->
+      <div class="lang-content" data-lang="fr">
+        <h1>Étudier en Russie – Votre Passerelle vers une Éducation de Classe Mondiale</h1>
+        <p>La Russie offre des diplômes reconnus internationalement, des frais de scolarité abordables et une riche expérience culturelle. Que vous soyez intéressé par la médecine, l'ingénierie ou les arts, les universités russes proposent des programmes de premier ordre enseignés en anglais et en russe.</p>
+      </div>
+      <!-- Arabic Version -->
+      <div class="lang-content" data-lang="ar">
+        <h1>الدراسة في روسيا - بوابتك إلى التعليم العالمي</h1>
+        <p>تقدم روسيا درجات علمية معترف بها دوليًا ورسوم دراسية معقولة وتجربة ثقافية غنية. سواء كنت مهتمًا بالطب أو الهندسة أو الفنون، توفر الجامعات الروسية برامج من الدرجة الأولى تُدرَّس باللغتين الإنجليزية والروسية.</p>
+      </div>
     </section>
-    <section id="why">
-      <h2 data-translate="avantages-title">Avantages d'Étudier en Russie</h2>
-      <ul>
-        <li data-translate="avantages-1">Diplôme Reconnu Internationalement: Les diplômes russes sont reconnus dans le monde entier et respectés par les employeurs internationaux.</li>
-        <li data-translate="avantages-2">Diversité Académique: Plus de 400 universités offrant des programmes dans tous les domaines : ingénierie, médecine, sciences, arts, et bien plus.</li>
-        <li data-translate="avantages-3">Admission Simplifiée: Processus d'admission direct sans examens d'entrée compliqués pour la plupart des programmes.</li>
-        <li data-translate="avantages-4">Vie Multiculturelle: Rencontrez des étudiants de plus de 170 pays et créez un réseau international.</li>
-        <li data-translate="avantages-5">Expérience Humaine Enrichissante: Découvrez une culture riche, apprenez le russe, et explorez l'un des plus grands pays du monde.</li>
-      </ul>
+    <section id="why" class="why-russia">
+      <h2 data-translate="why-title">Why Study in Russia?</h2>
+      <div class="benefits">
+        <div class="benefit-card">
+          <h3 data-translate="why-quality-title">🎓 World-Class Education</h3>
+          <p data-translate="why-quality">Russian universities rank among the top globally, with a strong focus on science, technology, and medicine.</p>
+        </div>
+        <div class="benefit-card">
+          <h3 data-translate="why-affordable-title">💸 Affordable Tuition</h3>
+          <p data-translate="why-affordable">Compared to Europe and North America, studying in Russia is significantly more affordable without compromising quality.</p>
+        </div>
+        <div class="benefit-card">
+          <h3 data-translate="why-recognized-title">🌍 Globally Recognized Degrees</h3>
+          <p data-translate="why-recognized">Degrees from Russian universities are recognized worldwide, opening doors to international career opportunities.</p>
+        </div>
+        <div class="benefit-card">
+          <h3 data-translate="why-culture-title">🎨 Rich Cultural Experience</h3>
+          <p data-translate="why-culture">Immerse yourself in Russian history, art, and traditions while building lifelong friendships with students from around the world.</p>
+        </div>
+      </div>
     </section>
-    <section id="process" class="application-process">
-      <h2 data-translate="process-title">Processus de Candidature Étape par Étape</h2>
+    <section id="process" class="application">
+      <h2 data-translate="process-title">How to Apply</h2>
       <ol>
-        <li data-translate="process-1">Choisissez Votre Programme: Explorez nos universités partenaires et sélectionnez le programme qui correspond à vos objectifs de carrière.</li>
-        <li data-translate="process-2">Envoyez Votre Candidature: Remplissez le formulaire de candidature en ligne et joignez vos documents académiques.</li>
-        <li data-translate="process-3">Recevez Votre Lettre d'Invitation: Une fois accepté, nous vous enverrons une lettre d'invitation officielle pour votre demande de visa.</li>
-        <li data-translate="process-4">Obtenez Votre Visa: Demandez votre visa étudiant à l'ambassade de Russie en Mauritanie.</li>
-        <li data-translate="process-5">Préparez Votre Voyage: Organisez votre voyage, votre hébergement et assistez à notre session d'orientation pré-départ.</li>
-        <li data-translate="process-6">Arrivée et Inscription: Nous vous accueillerons à l'aéroport et vous aiderons à vous installer dans votre nouvelle maison universitaire.</li>
+        <li data-translate="process-step1"><strong>Choose Your Program:</strong> Browse through medicine, engineering, business, and more.</li>
+        <li data-translate="process-step2"><strong>Submit Documents:</strong> High school diploma, transcripts, passport copy, and photos.</li>
+        <li data-translate="process-step3"><strong>Receive Invitation Letter:</strong> Once accepted, we help you get your official invitation letter.</li>
+        <li data-translate="process-step4"><strong>Apply for Visa:</strong> Use your invitation letter to apply for a student visa at the Russian embassy.</li>
+        <li data-translate="process-step5"><strong>Arrive & Enroll:</strong> Travel to Russia, complete registration, and start your journey!</li>
       </ol>
     </section>
     <section id="life" class="student-life">
-      <h2 data-translate="life-title">Student Life &amp; Practical Info</h2>
+      <h2 data-translate="life-title">Student Life & Practical Info</h2>
       <div class="info-cards">
         <div class="card">
           <h3 data-translate="life-accommodation-title">🏠 Accommodation</h3>
@@ -84,7 +115,7 @@
           <p data-translate="life-culture">Join student clubs, attend cultural festivals, explore museums, and enjoy the vibrant nightlife of Russian cities.</p>
         </div>
         <div class="card">
-          <h3 data-translate="life-safety-title">🛡️ Safety &amp; Support</h3>
+          <h3 data-translate="life-safety-title">🛡️ Safety & Support</h3>
           <p data-translate="life-safety">Universities provide 24/7 security, international student offices, and counseling services to ensure your safety and well-being.</p>
         </div>
       </div>
@@ -92,12 +123,8 @@
     <section class="photo-gallery">
       <h2 data-translate="gallery-title">Discover Russia: Famous Landmarks</h2>
       <div class="russia-landmarks">
-        <img src="https://images.unsplash.com/photo-1513326738677-b964603b136d" alt="Red Square, Moscow">
-        <img src="https://images.unsplash.com/photo-1556616510-9a94e2f6c94c" alt="Peterhof Palace, St. Petersburg">
-        <img src="https://images.unsplash.com/photo-1553913861-c0fddf2619ee" alt="Kazan Cathedral, St. Petersburg">
-        <img src="https://images.unsplash.com/photo-1552509969-0bbfe6d5c57a" alt="Lake Baikal, Siberia">
-        <img src="https://images.unsplash.com/photo-1586769082005-3d0e0c7b1e38" alt="Moscow Metro Station">
-        <img src="https://images.unsplash.com/photo-1542596594-b0c0ace3f0b0" alt="Golden Ring Churches">
+        <img src="images/Screen-Shot-2025-10-08-at-5.57.40-PM.jpg" alt="Peterhof Palace, St. Petersburg" />
+        <img src="images/image.jpg" alt="Student Campus" />
       </div>
     </section>
     <section id="contact">
@@ -112,11 +139,10 @@
       <a href="https://wa.me/22234567890" target="_blank" class="whatsapp-inline" data-translate="whatsapp-text">💬 Message us on WhatsApp</a>
     </section>
   </main>
+  <a href="https://wa.me/22234567890" target="_blank" class="whatsapp-float">💬</a>
   <footer>
-    <p data-translate="footer">© 2025 StudyRus Gateway. Tous droits réservés.</p>
+    <p data-translate="footer-text">&copy; 2025 StudyRus Gateway. All rights reserved. | Helping students from Mauritania and beyond achieve their dreams in Russia.</p>
   </footer>
-  <!-- Floating WhatsApp button -->
-  <a href="https://wa.me/22234567890" target="_blank" class="whatsapp-float" aria-label="Contact us on WhatsApp">💬</a>
-  <script src="script.js"></script>
+  <script src="translations.js"></script>
 </body>
 </html>
