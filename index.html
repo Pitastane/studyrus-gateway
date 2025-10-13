@@ -49,17 +49,77 @@
       margin: 24px auto;
       padding: 0 16px;
     }
+    .testimonials {
+      margin: 24px 0;
+      padding: 16px;
+      background: #f9f9f9;
+      border-radius: 8px;
+    }
+    .testimonials h2 {
+      color: #0066cc;
+    }
+    .testimonial {
+      margin: 16px 0;
+      padding: 12px;
+      background: white;
+      border-left: 4px solid #0066cc;
+      font-style: italic;
+    }
+    .testimonial span {
+      display: block;
+      margin-top: 8px;
+      font-style: normal;
+      font-weight: bold;
+      color: #555;
+    }
+    .whatsapp-btn {
+      display: inline-block;
+      background: #25D366;
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 8px;
+      margin: 16px 0;
+      font-weight: bold;
+    }
+    .whatsapp-btn:hover {
+      background: #1da851;
+    }
+    .contact-form {
+      margin: 16px 0;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .contact-form button {
+      background: green;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .contact-form button:hover {
+      background: darkgreen;
+    }
   </style>
 </head>
 <body>
-  <div class="lang-switch" style="text-align: center; margin-top: 16px;">
+  <div class="lang-switch">
     <button onclick="setLang('en')">English</button>
     <button onclick="setLang('fr')">Français</button>
     <button onclick="setLang('ar')">العربية</button>
     <button onclick="setLang('ru')">Русский</button>
   </div>
-
-  <div id="intro-en" class="intro" style="display:block;">
+  <div class="intro" id="intro-en" style="display:block;">
     <header>
       <div class="logo">StudyRus Gateway</div>
       <nav>
@@ -77,14 +137,25 @@
         <h2>About</h2>
         <p>StudyRus Gateway provides quick links, documentation, and updates for learners.</p>
       </section>
+      <div class="testimonials">
+        <h2>Ils ont étudié en Russie :</h2>
+        <div class="testimonial">« Grâce à StudyRus, j'ai pu m'installer facilement et réussir mes études médicales à Moscou !»<br><span>Fatima, Mauritanie</span></div>
+        <div class="testimonial">"StudyRus was always responsive. All paperwork in order and great advice for student life!"<br><span>Ahmed, Mauritania</span></div>
+      </div>
+      <a href="https://wa.me/79269540909" class="whatsapp-btn" target="_blank">💬 WhatsApp</a>
       <section id="contact">
         <h2>Contact</h2>
         <p>Questions or feedback? Reach out to our team any time.</p>
+        <form class="contact-form">
+          <input type="text" placeholder="Nom" required>
+          <input type="email" placeholder="Email" required>
+          <textarea rows="5" placeholder="Message" required></textarea>
+          <button type="submit">Envoyer</button>
+        </form>
       </section>
     </main>
   </div>
-
-  <div id="intro-fr" class="intro" style="display:none;">
+  <div class="intro" id="intro-fr" style="display:none;">
     <header>
       <div class="logo">Portail StudyRus</div>
       <nav>
@@ -102,14 +173,25 @@
         <h2>À propos</h2>
         <p>Le portail StudyRus propose des liens rapides, de la documentation et des actualités.</p>
       </section>
+      <div class="testimonials">
+        <h2>Ils ont étudié en Russie :</h2>
+        <div class="testimonial">« Grâce à StudyRus, j'ai pu m'installer facilement et réussir mes études médicales à Moscou !»<br><span>Fatima, Mauritanie</span></div>
+        <div class="testimonial">"StudyRus was always responsive. All paperwork in order and great advice for student life!"<br><span>Ahmed, Mauritania</span></div>
+      </div>
+      <a href="https://wa.me/79269540909" class="whatsapp-btn" target="_blank">💬 WhatsApp</a>
       <section id="contact">
         <h2>Contact</h2>
         <p>Des questions ou des retours ? Contactez notre équipe à tout moment.</p>
+        <form class="contact-form">
+          <input type="text" placeholder="Nom" required>
+          <input type="email" placeholder="Email" required>
+          <textarea rows="5" placeholder="Message" required></textarea>
+          <button type="submit">Envoyer</button>
+        </form>
       </section>
     </main>
   </div>
-
-  <div id="intro-ar" class="intro" style="display:none; direction: rtl; text-align: right;">
+  <div class="intro" id="intro-ar" style="display:none; direction: rtl; text-align: right;">
     <header>
       <div class="logo">بوابة ستادي روس</div>
       <nav>
@@ -127,14 +209,25 @@
         <h2>نبذة</h2>
         <p>توفر البوابة روابط سريعة ووثائق وتحديثات للمتعلمين.</p>
       </section>
+      <div class="testimonials">
+        <h2>Ils ont étudié en Russie :</h2>
+        <div class="testimonial">« Grâce à StudyRus, j'ai pu m'installer facilement et réussir mes études médicales à Moscou !»<br><span>Fatima, Mauritanie</span></div>
+        <div class="testimonial">"StudyRus was always responsive. All paperwork in order and great advice for student life!"<br><span>Ahmed, Mauritania</span></div>
+      </div>
+      <a href="https://wa.me/79269540909" class="whatsapp-btn" target="_blank">💬 WhatsApp</a>
       <section id="contact">
         <h2>تواصل</h2>
         <p>لديك أسئلة أو ملاحظات؟ تواصل مع فريقنا في أي وقت.</p>
+        <form class="contact-form">
+          <input type="text" placeholder="الاسم" required>
+          <input type="email" placeholder="البريد الإلكتروني" required>
+          <textarea rows="5" placeholder="الرسالة" required></textarea>
+          <button type="submit">إرسال</button>
+        </form>
       </section>
     </main>
   </div>
-
-  <div id="intro-ru" class="intro" style="display:none;">
+  <div class="intro" id="intro-ru" style="display:none;">
     <header>
       <div class="logo">Портал StudyRus</div>
       <nav>
@@ -152,13 +245,24 @@
         <h2>О проекте</h2>
         <p>Портал StudyRus предоставляет быстрые ссылки, документацию и обновления для учащихся.</p>
       </section>
+      <div class="testimonials">
+        <h2>Ils ont étudié en Russie :</h2>
+        <div class="testimonial">« Grâce à StudyRus, j'ai pu m'installer facilement et réussir mes études médicales à Moscou !»<br><span>Fatima, Mauritanie</span></div>
+        <div class="testimonial">"StudyRus was always responsive. All paperwork in order and great advice for student life!"<br><span>Ahmed, Mauritania</span></div>
+      </div>
+      <a href="https://wa.me/79269540909" class="whatsapp-btn" target="_blank">💬 WhatsApp</a>
       <section id="contact">
         <h2>Контакты</h2>
         <p>Вопросы или отзывы? Свяжитесь с нашей командой в любое время.</p>
+        <form class="contact-form">
+          <input type="text" placeholder="Имя" required>
+          <input type="email" placeholder="Email" required>
+          <textarea rows="5" placeholder="Сообщение" required></textarea>
+          <button type="submit">Отправить</button>
+        </form>
       </section>
     </main>
   </div>
-
   <script>
     function setLang(lang) {
       document.getElementById('intro-en').style.display = 'none';
