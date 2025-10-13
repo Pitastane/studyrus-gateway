@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>StudyRus Gateway</title>
   <style>
     body {
@@ -110,6 +110,32 @@
     .contact-form button:hover {
       background: darkgreen;
     }
+    /* Gallery styles */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin: 24px 0;
+    }
+    .gallery figure {
+      margin: 0;
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    }
+    .gallery img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .gallery figcaption {
+      padding: 10px 12px;
+      font-size: 0.95rem;
+      color: #444;
+      background: #fafafa;
+    }
   </style>
 </head>
 <body>
@@ -119,6 +145,8 @@
     <button onclick="setLang('ar')">العربية</button>
     <button onclick="setLang('ru')">Русский</button>
   </div>
+
+  <!-- English -->
   <div class="intro" id="intro-en" style="display:block;">
     <header>
       <div class="logo">StudyRus Gateway</div>
@@ -130,31 +158,46 @@
     </header>
     <main>
       <section id="features">
-        <h1>Welcome to StudyRus Gateway</h1>
-        <p>Your central hub to access StudyRus tools and resources.</p>
+        Welcome to StudyRus Gateway
+        Your central hub to access StudyRus tools and resources.
       </section>
       <section id="about">
-        <h2>About</h2>
-        <p>StudyRus Gateway provides quick links, documentation, and updates for learners.</p>
+        About
+        StudyRus Gateway provides quick links, documentation, and updates for learners.
       </section>
       <div class="testimonials">
-        <h2>Ils ont étudié en Russie :</h2>
-        <div class="testimonial">« Grâce à StudyRus, j'ai pu m'installer facilement et réussir mes études médicales à Moscou !»<br><span>Fatima, Mauritanie</span></div>
-        <div class="testimonial">"StudyRus was always responsive. All paperwork in order and great advice for student life!"<br><span>Ahmed, Mauritania</span></div>
+        Ils ont étudié en Russie :
+        <div class="testimonial">« Grâce à StudyRus, j'ai pu m'installer facilement et réussir mes études médicales à Moscou !»<br/>Fatima, Mauritanie</div>
+        <div class="testimonial">"StudyRus was always responsive. All paperwork in order and great advice for student life!"<br/>Ahmed, Mauritania</div>
       </div>
-      <a href="https://wa.me/79269540909" class="whatsapp-btn" target="_blank">💬 WhatsApp</a>
+      <a class="whatsapp-btn" href="https://wa.me/79269540909" target="_blank">💬 WhatsApp</a>
+
+      <!-- Gallery (before Contact) -->
+      <div class="gallery">
+        <figure>
+          <img src="images/Screen-Shot-2025-10-08-at-5.57.40-PM.jpg" alt="Peterhof Palace, St. Petersburg">
+          <figcaption>Peterhof Palace, St. Petersburg – Une référence du patrimoine russe et de la vie étudiante en Europe.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/image.jpg" alt="Étudiants internationaux à Moscou">
+          <figcaption>Campus international de Moscou – La diversité au cœur des universités russes.</figcaption>
+        </figure>
+      </div>
+
       <section id="contact">
-        <h2>Contact</h2>
-        <p>Questions or feedback? Reach out to our team any time.</p>
+        Contact
+        Questions or feedback? Reach out to our team any time.
         <form class="contact-form">
-          <input type="text" placeholder="Nom" required>
-          <input type="email" placeholder="Email" required>
+          <input type="text" placeholder="Nom" required />
+          <input type="email" placeholder="Email" required />
           <textarea rows="5" placeholder="Message" required></textarea>
           <button type="submit">Envoyer</button>
         </form>
       </section>
     </main>
   </div>
+
+  <!-- Français -->
   <div class="intro" id="intro-fr" style="display:none;">
     <header>
       <div class="logo">Portail StudyRus</div>
@@ -166,31 +209,46 @@
     </header>
     <main>
       <section id="features">
-        <h1>Bienvenue sur le portail StudyRus</h1>
-        <p>Votre hub central pour accéder aux outils et ressources StudyRus.</p>
+        Bienvenue sur le portail StudyRus
+        Votre hub central pour accéder aux outils et ressources StudyRus.
       </section>
       <section id="about">
-        <h2>À propos</h2>
-        <p>Le portail StudyRus propose des liens rapides, de la documentation et des actualités.</p>
+        À propos
+        Le portail StudyRus propose des liens rapides, de la documentation et des actualités.
       </section>
       <div class="testimonials">
-        <h2>Ils ont étudié en Russie :</h2>
-        <div class="testimonial">« Grâce à StudyRus, j'ai pu m'installer facilement et réussir mes études médicales à Moscou !»<br><span>Fatima, Mauritanie</span></div>
-        <div class="testimonial">"StudyRus was always responsive. All paperwork in order and great advice for student life!"<br><span>Ahmed, Mauritania</span></div>
+        Ils ont étudié en Russie :
+        <div class="testimonial">« Grâce à StudyRus, j'ai pu m'installer facilement et réussir mes études médicales à Moscou !»<br/>Fatima, Mauritanie</div>
+        <div class="testimonial">"StudyRus was always responsive. All paperwork in order and great advice for student life!"<br/>Ahmed, Mauritania</div>
       </div>
-      <a href="https://wa.me/79269540909" class="whatsapp-btn" target="_blank">💬 WhatsApp</a>
+      <a class="whatsapp-btn" href="https://wa.me/79269540909" target="_blank">💬 WhatsApp</a>
+
+      <!-- Galerie (avant Contact) -->
+      <div class="gallery">
+        <figure>
+          <img src="images/Screen-Shot-2025-10-08-at-5.57.40-PM.jpg" alt="Peterhof Palace, St. Petersburg">
+          <figcaption>Peterhof Palace, St. Petersburg – Une référence du patrimoine russe et de la vie étudiante en Europe.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/image.jpg" alt="Étudiants internationaux à Moscou">
+          <figcaption>Campus international de Moscou – La diversité au cœur des universités russes.</figcaption>
+        </figure>
+      </div>
+
       <section id="contact">
-        <h2>Contact</h2>
-        <p>Des questions ou des retours ? Contactez notre équipe à tout moment.</p>
+        Contact
+        Des questions ou des retours ? Contactez notre équipe à tout moment.
         <form class="contact-form">
-          <input type="text" placeholder="Nom" required>
-          <input type="email" placeholder="Email" required>
+          <input type="text" placeholder="Nom" required />
+          <input type="email" placeholder="Email" required />
           <textarea rows="5" placeholder="Message" required></textarea>
           <button type="submit">Envoyer</button>
         </form>
       </section>
     </main>
   </div>
+
+  <!-- العربية -->
   <div class="intro" id="intro-ar" style="display:none; direction: rtl; text-align: right;">
     <header>
       <div class="logo">بوابة ستادي روس</div>
@@ -202,31 +260,46 @@
     </header>
     <main>
       <section id="features">
-        <h1>مرحبًا بك في بوابة ستادي روس</h1>
-        <p>مركزك للوصول إلى أدوات وموارد StudyRus.</p>
+        مرحبًا بك في بوابة ستادي روس
+        مركزك للوصول إلى أدوات وموارد StudyRus.
       </section>
       <section id="about">
-        <h2>نبذة</h2>
-        <p>توفر البوابة روابط سريعة ووثائق وتحديثات للمتعلمين.</p>
+        نبذة
+        توفر البوابة روابط سريعة ووثائق وتحديثات للمتعلمين.
       </section>
       <div class="testimonials">
-        <h2>Ils ont étudié en Russie :</h2>
-        <div class="testimonial">« Grâce à StudyRus, j'ai pu m'installer facilement et réussir mes études médicales à Moscou !»<br><span>Fatima, Mauritanie</span></div>
-        <div class="testimonial">"StudyRus was always responsive. All paperwork in order and great advice for student life!"<br><span>Ahmed, Mauritania</span></div>
+        Ils ont étudié en Russie :
+        <div class="testimonial">« Grâce à StudyRus, j'ai pu m'installer facilement et réussir mes études médicales à Moscou !»<br/>Fatima, Mauritanie</div>
+        <div class="testimonial">"StudyRus was always responsive. All paperwork in order and great advice for student life!"<br/>Ahmed, Mauritania</div>
       </div>
-      <a href="https://wa.me/79269540909" class="whatsapp-btn" target="_blank">💬 WhatsApp</a>
+      <a class="whatsapp-btn" href="https://wa.me/79269540909" target="_blank">💬 WhatsApp</a>
+
+      <!-- المعرض (قبل تواصل) -->
+      <div class="gallery">
+        <figure>
+          <img src="images/Screen-Shot-2025-10-08-at-5.57.40-PM.jpg" alt="Peterhof Palace, St. Petersburg">
+          <figcaption>Peterhof Palace, St. Petersburg – Une référence du patrimoine russe et de la vie étudiante en Europe.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/image.jpg" alt="Étudiants internationaux à Moscou">
+          <figcaption>Campus international de Moscou – La diversité au cœur des universités russes.</figcaption>
+        </figure>
+      </div>
+
       <section id="contact">
-        <h2>تواصل</h2>
-        <p>لديك أسئلة أو ملاحظات؟ تواصل مع فريقنا في أي وقت.</p>
+        تواصل
+        لديك أسئلة أو ملاحظات؟ تواصل مع فريقنا في أي وقت.
         <form class="contact-form">
-          <input type="text" placeholder="الاسم" required>
-          <input type="email" placeholder="البريد الإلكتروني" required>
+          <input type="text" placeholder="الاسم" required />
+          <input type="email" placeholder="البريد الإلكتروني" required />
           <textarea rows="5" placeholder="الرسالة" required></textarea>
           <button type="submit">إرسال</button>
         </form>
       </section>
     </main>
   </div>
+
+  <!-- Русский -->
   <div class="intro" id="intro-ru" style="display:none;">
     <header>
       <div class="logo">Портал StudyRus</div>
@@ -238,31 +311,45 @@
     </header>
     <main>
       <section id="features">
-        <h1>Добро пожаловать на портал StudyRus</h1>
-        <p>Ваш центральный узел для доступа к инструментам и ресурсам StudyRus.</p>
+        Добро пожаловать на портал StudyRus
+        Ваш центральный узел для доступа к инструментам и ресурсам StudyRus.
       </section>
       <section id="about">
-        <h2>О проекте</h2>
-        <p>Портал StudyRus предоставляет быстрые ссылки, документацию и обновления для учащихся.</p>
+        О проекте
+        Портал StudyRus предоставляет быстрые ссылки, документацию и обновления для учащихся.
       </section>
       <div class="testimonials">
-        <h2>Ils ont étudié en Russie :</h2>
-        <div class="testimonial">« Grâce à StudyRus, j'ai pu m'installer facilement et réussir mes études médicales à Moscou !»<br><span>Fatima, Mauritanie</span></div>
-        <div class="testimonial">"StudyRus was always responsive. All paperwork in order and great advice for student life!"<br><span>Ahmed, Mauritania</span></div>
+        Ils ont étudié en Russie :
+        <div class="testimonial">« Grâce à StudyRus, j'ai pu m'installer facilement et réussir mes études médicales à Moscou !»<br/>Fatima, Mauritanie</div>
+        <div class="testimonial">"StudyRus was always responsive. All paperwork in order and great advice for student life!"<br/>Ahmed, Mauritania</div>
       </div>
-      <a href="https://wa.me/79269540909" class="whatsapp-btn" target="_blank">💬 WhatsApp</a>
+      <a class="whatsapp-btn" href="https://wa.me/79269540909" target="_blank">💬 WhatsApp</a>
+
+      <!-- Галерея (перед Контакты) -->
+      <div class="gallery">
+        <figure>
+          <img src="images/Screen-Shot-2025-10-08-at-5.57.40-PM.jpg" alt="Peterhof Palace, St. Petersburg">
+          <figcaption>Peterhof Palace, St. Petersburg – Une référence du patrimoine russe et de la vie étudiante en Europe.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/image.jpg" alt="Étudiants internationaux à Moscou">
+          <figcaption>Campus international de Moscou – La diversité au cœur des universités russes.</figcaption>
+        </figure>
+      </div>
+
       <section id="contact">
-        <h2>Контакты</h2>
-        <p>Вопросы или отзывы? Свяжитесь с нашей командой в любое время.</p>
+        Контакты
+        Вопросы или отзывы? Свяжитесь с нашей командой в любое время.
         <form class="contact-form">
-          <input type="text" placeholder="Имя" required>
-          <input type="email" placeholder="Email" required>
+          <input type="text" placeholder="Имя" required />
+          <input type="email" placeholder="Email" required />
           <textarea rows="5" placeholder="Сообщение" required></textarea>
           <button type="submit">Отправить</button>
         </form>
       </section>
     </main>
   </div>
+
   <script>
     function setLang(lang) {
       document.getElementById('intro-en').style.display = 'none';
